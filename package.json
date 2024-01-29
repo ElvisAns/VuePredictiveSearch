@@ -1,0 +1,39 @@
+{
+    "name": "vue-predictive-search",
+    "author": "Ansima Elvis",
+    "version": "1.0",
+    "description": "The most flexible search component for vuejs applications with auto suggestion and fuzzy search feature",
+    "main": "./dist/vue-predictive-search.umd.cjs",
+    "module": "./dist/vue-predictive-search.js",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/vue-predictive-search.js",
+            "require": "./dist/vue-predictive-search.umd.cjs"
+        }
+    },
+    "files": ["dist"],
+    "keywords": [
+        "vuejs search component",
+        "vue auto-suggestion",
+        "vue3"
+    ],
+    "dependencies": {
+        "minisearch": "^6.3.0",
+        "short-unique-id": "^5.0.3",
+        "vue": "^3.3.11"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.5.2",
+        "vite": "^5.0.8",
+        "vite-plugin-dts": "^3.7.2"
+    },
+    "peerDependencies": {
+        "vue": "^3.3.11"
+    }
+}
