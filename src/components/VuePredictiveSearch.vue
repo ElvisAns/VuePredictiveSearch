@@ -54,7 +54,10 @@ const updateSuggestionList = (event) => {
   timeoutId = setTimeout(() => {
     const result = searchEngine.search(event.target.value, { prefix: true, fuzzy: 0.2 });
     items.value = result.map(obj => {
-      const newObj = obj;
+      const newObj = {};
+      props.fieldsToReturnOnMatch.forEach(prop => {
+        newObj[prop] = obj[prop]
+      });
       if (newObj.hasOwnProperty('_id')) {
         newObj.id = newObj._id;
         delete newObj._id;
