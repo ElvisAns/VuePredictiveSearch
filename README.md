@@ -12,7 +12,7 @@ To integrate `VuePredictiveSearch` into your Vue.js project, you can follow the 
 
 ```vue
 <script lang="ts" setup>
-import { VuePredictiveSearch } from 'VuePredictiveSearch'
+import { VuePredictiveSearch } from 'vue-predictive-search'
 import { ref } from "vue"
 
 const books = ref([
