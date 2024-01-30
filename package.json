@@ -1,7 +1,7 @@
 {
     "name": "vue-predictive-search",
     "author": "Ansima Elvis",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "The most flexible search component for vuejs applications with auto suggestion and fuzzy search feature",
     "main": "./dist/vue-predictive-search.umd.cjs",
     "module": "./dist/vue-predictive-search.js",
