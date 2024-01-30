@@ -25,7 +25,7 @@ const viewUserSelection = (data: Object) => {
 </setup>
 <template>
   
-  <VuePredictiveSearch @selected="viewUserSelection" inputClasses="searchInput" :source="books" label="name" :fieldsToSearchFrom="['title', 'author', 'genre']" :fieldsToReturnOnMatch="['title', 'author', 'genre', 'price', 'publicationYear','id']">
+  <VuePredictiveSearch @selected="viewUserSelection" inputClasses="searchInput" :source="books" label="title" :fieldsToSearchFrom="['title', 'author', 'genre']" :fieldsToReturnOnMatch="['title', 'author', 'genre', 'price', 'publicationYear','id']">
     <template #no-element-found>
       <p>No element found</p>
     </template>
