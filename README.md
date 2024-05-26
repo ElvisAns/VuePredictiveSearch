@@ -1,6 +1,7 @@
 # VuePredictiveSearch
 VuePredictiveSearch is a Vue.js component that provides a simple yet powerful predictive search feature for your web applications. It supports fuzzy search, making it easy for users to find relevant items even with slight typos or variations.
 
+[![npm version](https://img.shields.io/npm/v/vue-predictive-search.svg)](https://www.npmjs.com/package/vue-predictive-search) [![Total Downloads](https://img.shields.io/npm/dt/vue-predictive-search.svg)](https://www.npmjs.com/package/vue-predictive-search) [![CI](https://github.com/ElvisAns/VuePredictiveSearch/actions/workflows/.ci.yaml/badge.svg?branch=main)](https://github.com/ElvisAns/VuePredictiveSearch/actions/workflows/.ci.yaml)
 ## Installation
 ```bash
 npm install VuePredictiveSearch
