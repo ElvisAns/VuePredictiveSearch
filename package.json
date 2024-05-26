@@ -6,7 +6,7 @@
       "url": "https://github.com/ElvisAns/VuePredictiveSearch"
     },
     "license": "MIT",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "The most flexible search component for vuejs applications with auto suggestion and fuzzy search feature",
     "main": "./dist/vue-predictive-search.umd.cjs",
     "module": "./dist/vue-predictive-search.js",
