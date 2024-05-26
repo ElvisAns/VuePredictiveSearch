@@ -1,8 +1,12 @@
 {
     "name": "vue-predictive-search",
     "author": "Ansima Elvis",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ElvisAns/VuePredictiveSearch"
+    },
     "license": "MIT",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "The most flexible search component for vuejs applications with auto suggestion and fuzzy search feature",
     "main": "./dist/vue-predictive-search.umd.cjs",
     "module": "./dist/vue-predictive-search.js",
@@ -11,7 +15,7 @@
         "dev": "vite",
         "build": "vite build",
         "serve": "vite preview",
-        "test": "vitest"
+        "test": "vitest run"
     },
     "exports": {
         ".": {
