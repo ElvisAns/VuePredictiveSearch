@@ -26,7 +26,7 @@ const viewUserSelection = (data: Object) => {
 </setup>
 <template>
   
-  <VuePredictiveSearch @selected="viewUserSelection" inputClasses="searchInput" :source="books" label="title" :fieldsToSearchFrom="['title', 'author', 'genre']" :fieldsToReturnOnMatch="['title', 'author', 'genre', 'price', 'publicationYear','id']">
+  <VuePredictiveSearch @selected="viewUserSelection" inputClasses="searchInput" :source="books" label="title" :fieldsToSearchFrom="['title', 'author', 'genre']" :fieldsToReturnOnMatch="['title', 'author', 'genre', 'price', 'publicationYear','id']" inputPlaceholder="What book are you looking for?">
     <template #no-element-found>
       <p>No element found</p>
     </template>
@@ -45,6 +45,7 @@ const viewUserSelection = (data: Object) => {
 - __fieldsToSearchFrom__: Array of field names to search from.
 - __fieldsToReturnOnMatch__: Array of field names to return when a match is found.
 - __inputClasses (Optional)__: Custom classes for the search input.
+- __inputPlaceholder__ : The placeholder for the search input, default to : 'What are you looking for?'
 
 📌 The component is using slots to allow a high customization, you will bring your own UI, just make sure to attach everything to the proper named slot
 

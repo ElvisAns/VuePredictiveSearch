@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input :class="inputClasses" @input="updateSuggestionList" type="search" v-model="search" placeholder="what are you looking for?" />
+    <input :class="inputClasses" @input="updateSuggestionList" type="search" v-model="search" :placeholder="inputPlaceholder" />
     <div v-if="!items.length && !hasNeverSearch">
       <slot name="no-element-found"></slot>
     </div>
@@ -23,7 +23,11 @@ const props = defineProps({
   label: { type: String, required: true },
   fieldsToSearchFrom: { type: Array, required: true },
   fieldsToReturnOnMatch: { type: Array, required: true },
-  inputClasses: String
+  inputClasses: String,
+  inputPlaceholder : {
+    type : String,
+    default : 'What are you looking for?'
+  }
 })
 var searchEngine;
 const items = ref([])
